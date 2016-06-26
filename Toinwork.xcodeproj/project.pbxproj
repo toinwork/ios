@@ -17,6 +17,14 @@
 		D8C75CD41D1FB1E2005C6AFA /* TWDomainSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C75CD31D1FB1E2005C6AFA /* TWDomainSettingViewController.m */; };
 		D8C75CD71D1FB791005C6AFA /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C75CD61D1FB791005C6AFA /* Member.m */; };
 		D8C75CDF1D1FBFE6005C6AFA /* TWAppStartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C75CDE1D1FBFE6005C6AFA /* TWAppStartManager.m */; };
+		D8ECB0131D1FCBE400F101D0 /* TWNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ECB0121D1FCBE400F101D0 /* TWNetWorkManager.m */; };
+		D8ECB0161D1FCC9400F101D0 /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ECB0151D1FCC9400F101D0 /* AppUtils.m */; };
+		D8ECB0191D1FCFA400F101D0 /* URLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ECB0181D1FCFA400F101D0 /* URLManager.m */; };
+		D8ECB0241D1FD28F00F101D0 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ECB01D1D1FD28F00F101D0 /* TPKeyboardAvoidingCollectionView.m */; };
+		D8ECB0251D1FD28F00F101D0 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ECB01F1D1FD28F00F101D0 /* TPKeyboardAvoidingScrollView.m */; };
+		D8ECB0261D1FD28F00F101D0 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ECB0211D1FD28F00F101D0 /* TPKeyboardAvoidingTableView.m */; };
+		D8ECB0271D1FD28F00F101D0 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ECB0231D1FD28F00F101D0 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		D8ECB02A1D1FD52200F101D0 /* UIDevice+IphoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ECB0291D1FD52200F101D0 /* UIDevice+IphoneModel.m */; };
 		E7A9722D7DD7E62D7D9E819C /* libPods-Toinwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC6502471701D8C59256ED3 /* libPods-Toinwork.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +70,23 @@
 		D8C75CDE1D1FBFE6005C6AFA /* TWAppStartManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAppStartManager.m; sourceTree = "<group>"; };
 		D8C75CE11D1FC073005C6AFA /* NetWorkMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkMacro.h; sourceTree = "<group>"; };
 		D8C75CE21D1FC130005C6AFA /* TWNetWorkDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWNetWorkDefinition.h; sourceTree = "<group>"; };
+		D8ECB0111D1FCBE400F101D0 /* TWNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNetWorkManager.h; sourceTree = "<group>"; };
+		D8ECB0121D1FCBE400F101D0 /* TWNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNetWorkManager.m; sourceTree = "<group>"; };
+		D8ECB0141D1FCC9400F101D0 /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
+		D8ECB0151D1FCC9400F101D0 /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
+		D8ECB0171D1FCFA400F101D0 /* URLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLManager.h; sourceTree = "<group>"; };
+		D8ECB0181D1FCFA400F101D0 /* URLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLManager.m; sourceTree = "<group>"; };
+		D8ECB01A1D1FD0FF00F101D0 /* Toinwork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Toinwork-Prefix.pch"; sourceTree = "<group>"; };
+		D8ECB01C1D1FD28F00F101D0 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		D8ECB01D1D1FD28F00F101D0 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		D8ECB01E1D1FD28F00F101D0 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		D8ECB01F1D1FD28F00F101D0 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		D8ECB0201D1FD28F00F101D0 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		D8ECB0211D1FD28F00F101D0 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		D8ECB0221D1FD28F00F101D0 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		D8ECB0231D1FD28F00F101D0 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		D8ECB0281D1FD52200F101D0 /* UIDevice+IphoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IphoneModel.h"; sourceTree = "<group>"; };
+		D8ECB0291D1FD52200F101D0 /* UIDevice+IphoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IphoneModel.m"; sourceTree = "<group>"; };
 		FDC6502471701D8C59256ED3 /* libPods-Toinwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Toinwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,6 +180,7 @@
 				D8C75C971D1F9F00005C6AFA /* LaunchScreen.storyboard */,
 				D8C75C9A1D1F9F00005C6AFA /* Info.plist */,
 				D8C75C8A1D1F9F00005C6AFA /* main.m */,
+				D8ECB01A1D1FD0FF00F101D0 /* Toinwork-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,6 +206,8 @@
 		D8C75CCA1D1FB10B005C6AFA /* CategoryModule */ = {
 			isa = PBXGroup;
 			children = (
+				D8ECB0281D1FD52200F101D0 /* UIDevice+IphoneModel.h */,
+				D8ECB0291D1FD52200F101D0 /* UIDevice+IphoneModel.m */,
 			);
 			path = CategoryModule;
 			sourceTree = "<group>";
@@ -206,6 +234,8 @@
 			children = (
 				D8C75CE01D1FC020005C6AFA /* NetWorkManager */,
 				D8C75CE11D1FC073005C6AFA /* NetWorkMacro.h */,
+				D8ECB0171D1FCFA400F101D0 /* URLManager.h */,
+				D8ECB0181D1FCFA400F101D0 /* URLManager.m */,
 			);
 			path = NetworkModule;
 			sourceTree = "<group>";
@@ -213,6 +243,7 @@
 		D8C75CCE1D1FB10B005C6AFA /* ThirdComponentsModule */ = {
 			isa = PBXGroup;
 			children = (
+				D8ECB01B1D1FD28F00F101D0 /* TPKeyboardAvoiding */,
 			);
 			path = ThirdComponentsModule;
 			sourceTree = "<group>";
@@ -220,6 +251,8 @@
 		D8C75CCF1D1FB10B005C6AFA /* UtilsModule */ = {
 			isa = PBXGroup;
 			children = (
+				D8ECB0141D1FCC9400F101D0 /* AppUtils.h */,
+				D8ECB0151D1FCC9400F101D0 /* AppUtils.m */,
 			);
 			path = UtilsModule;
 			sourceTree = "<group>";
@@ -254,8 +287,25 @@
 			isa = PBXGroup;
 			children = (
 				D8C75CE21D1FC130005C6AFA /* TWNetWorkDefinition.h */,
+				D8ECB0111D1FCBE400F101D0 /* TWNetWorkManager.h */,
+				D8ECB0121D1FCBE400F101D0 /* TWNetWorkManager.m */,
 			);
 			path = NetWorkManager;
+			sourceTree = "<group>";
+		};
+		D8ECB01B1D1FD28F00F101D0 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				D8ECB01C1D1FD28F00F101D0 /* TPKeyboardAvoidingCollectionView.h */,
+				D8ECB01D1D1FD28F00F101D0 /* TPKeyboardAvoidingCollectionView.m */,
+				D8ECB01E1D1FD28F00F101D0 /* TPKeyboardAvoidingScrollView.h */,
+				D8ECB01F1D1FD28F00F101D0 /* TPKeyboardAvoidingScrollView.m */,
+				D8ECB0201D1FD28F00F101D0 /* TPKeyboardAvoidingTableView.h */,
+				D8ECB0211D1FD28F00F101D0 /* TPKeyboardAvoidingTableView.m */,
+				D8ECB0221D1FD28F00F101D0 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				D8ECB0231D1FD28F00F101D0 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,8 +490,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8C75C8E1D1F9F00005C6AFA /* AppDelegate.m in Sources */,
+				D8ECB0271D1FD28F00F101D0 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				D8ECB0251D1FD28F00F101D0 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				D8ECB0241D1FD28F00F101D0 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				D8ECB0131D1FCBE400F101D0 /* TWNetWorkManager.m in Sources */,
 				D8C75CD41D1FB1E2005C6AFA /* TWDomainSettingViewController.m in Sources */,
+				D8ECB02A1D1FD52200F101D0 /* UIDevice+IphoneModel.m in Sources */,
 				D8C75C8B1D1F9F00005C6AFA /* main.m in Sources */,
+				D8ECB0161D1FCC9400F101D0 /* AppUtils.m in Sources */,
+				D8ECB0191D1FCFA400F101D0 /* URLManager.m in Sources */,
+				D8ECB0261D1FD28F00F101D0 /* TPKeyboardAvoidingTableView.m in Sources */,
 				D8C75CD71D1FB791005C6AFA /* Member.m in Sources */,
 				D8C75CDF1D1FBFE6005C6AFA /* TWAppStartManager.m in Sources */,
 			);
@@ -585,6 +643,9 @@
 			baseConfigurationReference = 88C20199EBD39AC03B26C109 /* Pods-Toinwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PREFIX_HEADER = "Toinwork/Toinwork-Prefix.pch";
 				INFOPLIST_FILE = Toinwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = toinwork.Toinwork;
@@ -597,6 +658,9 @@
 			baseConfigurationReference = 0EA25777D4C89419F6D55EE5 /* Pods-Toinwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PREFIX_HEADER = "Toinwork/Toinwork-Prefix.pch";
 				INFOPLIST_FILE = Toinwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = toinwork.Toinwork;
