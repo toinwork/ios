@@ -1,24 +1,22 @@
 //
-//  TWDomainSettingViewController.m
+//  TWHomeViewController.m
 //  Toinwork
 //
-//  Created by zmq on 16/6/26.
+//  Created by zmq on 16/6/27.
 //  Copyright © 2016年 Toinwork. All rights reserved.
 //
 
-#import "TWDomainSettingViewController.h"
+#import "TWHomeViewController.h"
 
-@interface TWDomainSettingViewController ()
-@property(nonatomic, strong) IBOutlet UIView *navigatorView;
+@interface TWHomeViewController ()
+
 @end
 
-@implementation TWDomainSettingViewController
+@implementation TWHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.view setBackgroundColor:ViewControllerBackgroundColor];
-    [self.navigatorView setBackgroundColor:NavigatorBackgroundColor];
 }
 
 - (void)didReceiveMemoryWarning {

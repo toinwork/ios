@@ -7,7 +7,12 @@
 //
 
 #import "TWAppStartManager.h"
+#import "AppDelegate.h"
 #import "Member.h"
+
+#import "TWHomeViewController.h"
+#import "TWLoginViewController.h"
+#import "TWDomainSettingViewController.h"
 
 #define HostProfilePlist @"PersonProfile.plist"
 @implementation TWAppStartManager
@@ -95,14 +100,77 @@
  */
 -(void)didStartApp
 {
-    
+    NSString *domainUrl = [[NSUserDefaults standardUserDefaults] objectForKey:TWK_AppDomainURLKey];
+    if (domainUrl) {
+        [self currentHostMember];
+        if (host) {
+            NSString *isAutoLogin = [[NSUserDefaults standardUserDefaults] objectForKey:TWK_IsAutoLoginKey];
+            if ([@"1" isEqualToString:isAutoLogin]) {
+                [self setHomeView];
+                return;
+            }
+        }
+        [self setLoginView];
+    }else{
+        [self setDomainView];
+    }
 }
 
+/**
+ *  设置当前页为主页面
+ */
+-(void)setHomeView
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    TWHomeViewController *twHomeVC = [storyboard instantiateViewControllerWithIdentifier:@"HomeViewIdentify"];
+    _navigationController = nil;
+    _navigationController = [[UINavigationController alloc] initWithRootViewController:twHomeVC];
+    [_navigationController setNavigationBarHidden:YES];
+    [[(AppDelegate *)[UIApplication sharedApplication].delegate window] setRootViewController:_navigationController];
+}
+
+/**
+ *  设置当前页为域名页面
+ */
+-(void)setDomainView
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    TWDomainSettingViewController *twDomainSettingVC = [storyboard instantiateViewControllerWithIdentifier:@"DomainSettingViewIdentify"];
+    _navigationController = nil;
+    _navigationController = [[UINavigationController alloc] initWithRootViewController:twDomainSettingVC];
+    [_navigationController setNavigationBarHidden:YES];
+    [[(AppDelegate *)[UIApplication sharedApplication].delegate window] setRootViewController:_navigationController];
+}
+
+/**
+ *  设置当前页为登录页面
+ */
+-(void)setLoginView
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    TWLoginViewController *twLoginVC = [storyboard instantiateViewControllerWithIdentifier:@"LoginViewIdentify"];
+    _navigationController = nil;
+    _navigationController = [[UINavigationController alloc] initWithRootViewController:twLoginVC];
+    [_navigationController setNavigationBarHidden:YES];
+    [[(AppDelegate *)[UIApplication sharedApplication].delegate window] setRootViewController:_navigationController];
+}
+
+/**
+ *  设置当前页为引导页
+ */
+-(void)setGuidView
+{
+    
+}
 /**
  *  app退出登录后需要做的工作
  */
 -(void)loginout
 {
-    
+    [_navigationController popToRootViewControllerAnimated:NO];
+    _navigationController = nil;
+    [self setLoginView];
+    [[NSUserDefaults standardUserDefaults] setObject:@"0" forKey:TWK_IsAutoLoginKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 @end

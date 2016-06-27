@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8955F451D217DF600B8594F /* TWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8955F441D217DF600B8594F /* TWLoginViewController.m */; };
+		D8955F491D2184DC00B8594F /* TWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8955F481D2184DC00B8594F /* TWHomeViewController.m */; };
 		D8C75C8B1D1F9F00005C6AFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C75C8A1D1F9F00005C6AFA /* main.m */; };
 		D8C75C8E1D1F9F00005C6AFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C75C8D1D1F9F00005C6AFA /* AppDelegate.m */; };
 		D8C75C941D1F9F00005C6AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C75C921D1F9F00005C6AFA /* Main.storyboard */; };
@@ -48,6 +50,11 @@
 /* Begin PBXFileReference section */
 		0EA25777D4C89419F6D55EE5 /* Pods-Toinwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toinwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toinwork/Pods-Toinwork.release.xcconfig"; sourceTree = "<group>"; };
 		88C20199EBD39AC03B26C109 /* Pods-Toinwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toinwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Toinwork/Pods-Toinwork.debug.xcconfig"; sourceTree = "<group>"; };
+		D8955F411D215D3600B8594F /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		D8955F431D217DF600B8594F /* TWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLoginViewController.h; sourceTree = "<group>"; };
+		D8955F441D217DF600B8594F /* TWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLoginViewController.m; sourceTree = "<group>"; };
+		D8955F471D2184DC00B8594F /* TWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWHomeViewController.h; sourceTree = "<group>"; };
+		D8955F481D2184DC00B8594F /* TWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWHomeViewController.m; sourceTree = "<group>"; };
 		D8C75C861D1F9F00005C6AFA /* Toinwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toinwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C75C8A1D1F9F00005C6AFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D8C75C8C1D1F9F00005C6AFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +138,24 @@
 				FDC6502471701D8C59256ED3 /* libPods-Toinwork.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8955F421D217DE100B8594F /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D8955F431D217DF600B8594F /* TWLoginViewController.h */,
+				D8955F441D217DF600B8594F /* TWLoginViewController.m */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		D8955F461D2184C400B8594F /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D8955F471D2184DC00B8594F /* TWHomeViewController.h */,
+				D8955F481D2184DC00B8594F /* TWHomeViewController.m */,
+			);
+			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 		D8C75C7D1D1F9F00005C6AFA = {
@@ -253,6 +278,7 @@
 			children = (
 				D8ECB0141D1FCC9400F101D0 /* AppUtils.h */,
 				D8ECB0151D1FCC9400F101D0 /* AppUtils.m */,
+				D8955F411D215D3600B8594F /* Global.h */,
 			);
 			path = UtilsModule;
 			sourceTree = "<group>";
@@ -260,6 +286,8 @@
 		D8C75CD01D1FB10B005C6AFA /* ViewModule */ = {
 			isa = PBXGroup;
 			children = (
+				D8955F461D2184C400B8594F /* HomeViewController */,
+				D8955F421D217DE100B8594F /* LoginViewController */,
 				D8C75CD11D1FB1C0005C6AFA /* DomainSettingViewController */,
 			);
 			path = ViewModule;
@@ -498,6 +526,8 @@
 				D8ECB02A1D1FD52200F101D0 /* UIDevice+IphoneModel.m in Sources */,
 				D8C75C8B1D1F9F00005C6AFA /* main.m in Sources */,
 				D8ECB0161D1FCC9400F101D0 /* AppUtils.m in Sources */,
+				D8955F491D2184DC00B8594F /* TWHomeViewController.m in Sources */,
+				D8955F451D217DF600B8594F /* TWLoginViewController.m in Sources */,
 				D8ECB0191D1FCFA400F101D0 /* URLManager.m in Sources */,
 				D8ECB0261D1FD28F00F101D0 /* TPKeyboardAvoidingTableView.m in Sources */,
 				D8C75CD71D1FB791005C6AFA /* Member.m in Sources */,

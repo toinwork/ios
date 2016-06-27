@@ -12,6 +12,8 @@
 {
     Member *host;
 }
+@property(nonatomic, strong) UINavigationController *navigationController;
+
 + (instancetype)sharedInstance;
 
 /**
@@ -32,6 +34,11 @@
  *  app启动后需要做的工作
  */
 -(void)didStartApp;
+
+/**
+ *  设置当前页为域名页面
+ */
+-(void)setDomainView;
 
 /**
  *  app退出登录后需要做的工作

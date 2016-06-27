@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TWAppStartManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //启动app后做准备工作
+    [[TWAppStartManager sharedInstance] didStartApp];
     return YES;
 }
 

@@ -1,24 +1,22 @@
 //
-//  TWDomainSettingViewController.m
+//  TWLoginViewController.m
 //  Toinwork
 //
-//  Created by zmq on 16/6/26.
+//  Created by zmq on 16/6/27.
 //  Copyright © 2016年 Toinwork. All rights reserved.
 //
 
-#import "TWDomainSettingViewController.h"
+#import "TWLoginViewController.h"
 
-@interface TWDomainSettingViewController ()
-@property(nonatomic, strong) IBOutlet UIView *navigatorView;
+@interface TWLoginViewController ()
+
 @end
 
-@implementation TWDomainSettingViewController
+@implementation TWLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.view setBackgroundColor:ViewControllerBackgroundColor];
-    [self.navigatorView setBackgroundColor:NavigatorBackgroundColor];
 }
 
 - (void)didReceiveMemoryWarning {
