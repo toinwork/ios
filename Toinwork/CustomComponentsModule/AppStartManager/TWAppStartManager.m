@@ -102,6 +102,7 @@
 {
     NSString *domainUrl = [[NSUserDefaults standardUserDefaults] objectForKey:TWK_AppDomainURLKey];
     if (domainUrl) {
+        [AppUtils setDomainUrl:domainUrl];
         [self currentHostMember];
         if (host) {
             NSString *isAutoLogin = [[NSUserDefaults standardUserDefaults] objectForKey:TWK_IsAutoLoginKey];

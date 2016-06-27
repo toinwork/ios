@@ -19,6 +19,13 @@
 + (NSString*) appVersion;
 
 /**
+ *  设置当前域名
+ *
+ *  @param domainUrl 当前域名
+ */
++(void)setDomainUrl:(NSString *)domainUrl;
+
+/**
  *  返回当前域名
  *
  *  @return 当前域名
